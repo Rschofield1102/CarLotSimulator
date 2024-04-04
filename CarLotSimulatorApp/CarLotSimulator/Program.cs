@@ -9,16 +9,16 @@ namespace CarLotSimulator
             {
                 
                 Car myCar = new Car() { Year = 2001, Make = "Toytoa", Model = "Corolla", EngineNoise = "kinda loud", HonkNoise = "LOUDDD", IsDriveable = true};
-                     myCar.MakeEngineNoise(myCar.EngineNoise);
-                     myCar.MakeHonkNoise(myCar.HonkNoise);
-
-                    
 
                 Car familyCar = new Car() { Year = 2011, Make = "Toytoa", Model = "Tacoma", EngineNoise = "very quiet", HonkNoise = "beep beep", IsDriveable = true };
-                     familyCar.MakeEngineNoise(familyCar.EngineNoise);
-                     familyCar.MakeHonkNoise(familyCar.HonkNoise);
 
-            
+                Car myTruck = new Car() { Year = 2022, Make = "Ford", Model = "Raptor", EngineNoise = "very quiet", HonkNoise = "beeps", IsDriveable = true };
+
+                
+                myCar.MakeEngineNoise();
+                familyCar.MakeHonkNoise();
+                myTruck.MakeHonkNoise();
+
 
             //TODO
 
