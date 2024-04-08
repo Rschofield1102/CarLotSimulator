@@ -14,21 +14,27 @@ namespace CarLotSimulator
         {
             Console.WriteLine("SOLD CAR");
             Console.WriteLine( $"{Year},{Make},{Model},{EngineNoise},{HonkNoise},{IsDriveable}");
+            Console.WriteLine();
+           
 
             
-            Console.WriteLine();
         }
 
         public void MakeHonkNoise()
         {
-            
-            Console.WriteLine( $"FOR SALE {Year},{Make},{Model},{EngineNoise},{HonkNoise},{IsDriveable}");
-            
+            Console.WriteLine("Car FOR SALE");
+            Console.WriteLine( $"{Year},{Make},{Model},{EngineNoise},{HonkNoise},{IsDriveable}");
+            Console.WriteLine();
         }
 
 
 
-        
+        public Car ()
+        {
+            CarLot.numberOfCars++;
+
+            
+        }
 
 
 

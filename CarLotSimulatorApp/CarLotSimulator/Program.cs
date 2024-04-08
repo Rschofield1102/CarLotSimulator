@@ -7,7 +7,9 @@ namespace CarLotSimulator
 
             static void Main(string[] args)
             {
-                
+
+            
+                    
                 Car myCar = new Car() { Year = 2001, Make = "Toytoa", Model = "Corolla", EngineNoise = "kinda loud", HonkNoise = "LOUDDD", IsDriveable = true};
 
                 Car familyCar = new Car() { Year = 2011, Make = "Toytoa", Model = "Tacoma", EngineNoise = "very quiet", HonkNoise = "beep beep", IsDriveable = true };
@@ -18,6 +20,15 @@ namespace CarLotSimulator
                 myCar.MakeEngineNoise();
                 familyCar.MakeHonkNoise();
                 myTruck.MakeHonkNoise();
+                Console.WriteLine($"Numbers of cars bought and sold for the month of April: {CarLot.numberOfCars}");
+
+                
+
+                
+
+
+
+
 
 
             //TODO
